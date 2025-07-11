@@ -1,0 +1,1888 @@
+{
+    "configs": [
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.BootstrapConfigDump",
+            "bootstrap": {
+                "node": {
+                    "id": "default~local",
+                    "cluster": "xds-cluster",
+                    "user_agent_name": "envoy",
+                    "user_agent_build_version": {
+                        "version": {
+                            "major_number": 1,
+                            "minor_number": 21,
+                            "patch": 5
+                        },
+                        "metadata": {
+                            "revision.status": "Modified",
+                            "revision.sha": "a2fd8258a14b8ee7c394de65ffa435e6de0dcc9f",
+                            "build.type": "RELEASE",
+                            "ssl.version": "BoringSSL"
+                        }
+                    },
+                    "extensions": [
+                        {
+                            "name": "envoy.compression.brotli.decompressor",
+                            "category": "envoy.compression.decompressor"
+                        },
+                        {
+                            "name": "envoy.compression.gzip.decompressor",
+                            "category": "envoy.compression.decompressor"
+                        },
+                        {
+                            "name": "envoy.extensions.network.socket_interface.default_socket_interface",
+                            "category": "envoy.bootstrap"
+                        },
+                        {
+                            "name": "envoy.network.dns_resolver.cares",
+                            "category": "envoy.network.dns_resolver"
+                        },
+                        {
+                            "name": "envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                            "category": "envoy.upstream_options"
+                        },
+                        {
+                            "name": "envoy.upstreams.http.http_protocol_options",
+                            "category": "envoy.upstream_options"
+                        },
+                        {
+                            "name": "composite-action",
+                            "category": "envoy.matching.action"
+                        },
+                        {
+                            "name": "skip",
+                            "category": "envoy.matching.action"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.alts",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.quic",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.raw_buffer",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.starttls",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tap",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tcp_stats",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tls",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.upstream_proxy_protocol",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "raw_buffer",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "starttls",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "tls",
+                            "category": "envoy.transport_sockets.upstream"
+                        },
+                        {
+                            "name": "envoy.body_to_metadata",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.cors",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.aws_request_signing",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.body-to-metadata.1.0",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.composite",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.cors",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.lua",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.router",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.srhino-plugin-loader.1.0",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.filters.http.strong-stateful-session.1.0",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.lua",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.router",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.srhino_plugin_loader",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.strong_stateful_session",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "match-wrapper",
+                            "category": "envoy.filters.http"
+                        },
+                        {
+                            "name": "envoy.grpc_credentials.default",
+                            "category": "envoy.grpc_credentials"
+                        },
+                        {
+                            "name": "envoy.quic.crypto_stream.server.quiche",
+                            "category": "envoy.quic.server.crypto_stream"
+                        },
+                        {
+                            "name": "envoy.filters.listener.http_inspector",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.filters.listener.original_dst",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.filters.listener.original_src",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.filters.listener.tls_inspector",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.listener.http_inspector",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.listener.original_dst",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.listener.original_src",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.listener.tls_inspector",
+                            "category": "envoy.filters.listener"
+                        },
+                        {
+                            "name": "envoy.metrics_service",
+                            "category": "envoy.stats_sinks"
+                        },
+                        {
+                            "name": "envoy.stat_sinks.metrics_service",
+                            "category": "envoy.stats_sinks"
+                        },
+                        {
+                            "name": "envoy.http.original_ip_detection.xff",
+                            "category": "envoy.http.original_ip_detection"
+                        },
+                        {
+                            "name": "envoy.compression.brotli.compressor",
+                            "category": "envoy.compression.compressor"
+                        },
+                        {
+                            "name": "envoy.compression.gzip.compressor",
+                            "category": "envoy.compression.compressor"
+                        },
+                        {
+                            "name": "envoy.access_loggers.file",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.access_loggers.stderr",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.access_loggers.stdout",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.file_access_log",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.stderr_access_log",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.stdout_access_log",
+                            "category": "envoy.access_loggers"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.alts",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.quic",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.raw_buffer",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.starttls",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tap",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tcp_stats",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.transport_sockets.tls",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "raw_buffer",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "starttls",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "tls",
+                            "category": "envoy.transport_sockets.downstream"
+                        },
+                        {
+                            "name": "envoy.cluster.eds",
+                            "category": "envoy.clusters"
+                        },
+                        {
+                            "name": "envoy.cluster.logical_dns",
+                            "category": "envoy.clusters"
+                        },
+                        {
+                            "name": "envoy.cluster.original_dst",
+                            "category": "envoy.clusters"
+                        },
+                        {
+                            "name": "envoy.cluster.static",
+                            "category": "envoy.clusters"
+                        },
+                        {
+                            "name": "envoy.cluster.strict_dns",
+                            "category": "envoy.clusters"
+                        },
+                        {
+                            "name": "envoy.ip",
+                            "category": "envoy.resolvers"
+                        },
+                        {
+                            "name": "envoy.filters.network.http_connection_manager",
+                            "category": "envoy.filters.network"
+                        },
+                        {
+                            "name": "envoy.http_connection_manager",
+                            "category": "envoy.filters.network"
+                        },
+                        {
+                            "name": "request-headers",
+                            "category": "envoy.matching.http.input"
+                        },
+                        {
+                            "name": "request-trailers",
+                            "category": "envoy.matching.http.input"
+                        },
+                        {
+                            "name": "response-headers",
+                            "category": "envoy.matching.http.input"
+                        },
+                        {
+                            "name": "response-trailers",
+                            "category": "envoy.matching.http.input"
+                        },
+                        {
+                            "name": "envoy.quic.proof_source.filter_chain",
+                            "category": "envoy.quic.proof_source"
+                        },
+                        {
+                            "name": "envoy.filters.connection_pools.http.generic",
+                            "category": "envoy.upstreams"
+                        },
+                        {
+                            "name": "envoy.filters.connection_pools.http.http",
+                            "category": "envoy.upstreams"
+                        },
+                        {
+                            "name": "envoy.filters.connection_pools.http.tcp",
+                            "category": "envoy.upstreams"
+                        },
+                        {
+                            "name": "envoy.tls.cert_validator.default",
+                            "category": "envoy.tls.cert_validator"
+                        },
+                        {
+                            "name": "envoy.watchdog.abort_action",
+                            "category": "envoy.guarddog_actions"
+                        },
+                        {
+                            "name": "envoy.request_id.uuid",
+                            "category": "envoy.request_id"
+                        }
+                    ]
+                },
+                "static_resources": {
+                    "clusters": [
+                        {
+                            "name": "xds_cluster",
+                            "type": "STATIC",
+                            "connect_timeout": "1s",
+                            "load_assignment": {
+                                "cluster_name": "xds_cluster",
+                                "endpoints": [
+                                    {
+                                        "lb_endpoints": [
+                                            {
+                                                "endpoint": {
+                                                    "address": {
+                                                        "socket_address": {
+                                                            "address": "127.0.0.1",
+                                                            "port_value": 9977
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "typed_extension_protocol_options": {
+                                "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                    "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                    "explicit_http_config": {
+                                        "http2_protocol_options": {}
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "dynamic_resources": {
+                    "lds_config": {
+                        "ads": {},
+                        "resource_api_version": "V3"
+                    },
+                    "cds_config": {
+                        "ads": {},
+                        "resource_api_version": "V3"
+                    },
+                    "ads_config": {
+                        "api_type": "DELTA_GRPC",
+                        "grpc_services": [
+                            {
+                                "envoy_grpc": {
+                                    "cluster_name": "xds_cluster"
+                                }
+                            }
+                        ],
+                        "set_node_on_first_message_only": true,
+                        "transport_api_version": "V3"
+                    }
+                },
+                "stats_flush_interval": "1s",
+                "admin": {
+                    "address": {
+                        "socket_address": {
+                            "address": "127.0.0.1",
+                            "port_value": 9902
+                        }
+                    }
+                },
+                "stats_config": {
+                    "stats_matcher": {
+                        "inclusion_list": {
+                            "patterns": [
+                                {
+                                    "suffix": "upstream_rq_size"
+                                },
+                                {
+                                    "suffix": "upstream_rs_size"
+                                },
+                                {
+                                    "suffix": "upstream_cx_rx_bytes_total"
+                                },
+                                {
+                                    "suffix": "upstream_cx_tx_bytes_total"
+                                },
+                                {
+                                    "suffix": "upstream_cx_active"
+                                },
+                                {
+                                    "suffix": "upstream_rq_total"
+                                },
+                                {
+                                    "suffix": "upstream_rq_1xx"
+                                },
+                                {
+                                    "suffix": "upstream_rq_2xx"
+                                },
+                                {
+                                    "suffix": "upstream_rq_3xx"
+                                },
+                                {
+                                    "suffix": "upstream_rq_5xx"
+                                },
+                                {
+                                    "suffix": "upstream_rq_4xx"
+                                },
+                                {
+                                    "suffix": "healthy"
+                                },
+                                {
+                                    "suffix": "health_status"
+                                },
+                                {
+                                    "suffix": "membership_total"
+                                },
+                                {
+                                    "suffix": "upstream_cx_total"
+                                },
+                                {
+                                    "suffix": "active_clusters"
+                                },
+                                {
+                                    "suffix": "warming_clusters"
+                                },
+                                {
+                                    "suffix": "ulid"
+                                },
+                                {
+                                    "suffix": "total_filter_chains_draining"
+                                },
+                                {
+                                    "suffix": "elapsed_time"
+                                },
+                                {
+                                    "safe_regex": {
+                                        "google_re2": {},
+                                        "regex": "^http\\.((.+?)\\.)downstream_cx_total"
+                                    }
+                                },
+                                {
+                                    "safe_regex": {
+                                        "google_re2": {},
+                                        "regex": "^http\\.((.+?)\\.)downstream_cx_active"
+                                    }
+                                },
+                                {
+                                    "safe_regex": {
+                                        "google_re2": {},
+                                        "regex": "^http\\.((.+?)\\.)downstream_cx_rx_bytes_total"
+                                    }
+                                },
+                                {
+                                    "safe_regex": {
+                                        "google_re2": {},
+                                        "regex": "^http\\.((.+?)\\.)downstream_cx_tx_bytes_total"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "layered_runtime": {
+                    "layers": [
+                        {
+                            "name": "static_layer_0",
+                            "static_layer": {
+                                "envoy": {
+                                    "resource_limits": {
+                                        "listener": {
+                                            "example_listener_name": {
+                                                "connection_limit": 10000
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "name": "static_layer_response_flag",
+                            "static_layer": {
+                                "NoHealthyUpstream": "当前网页访问出错"
+                            }
+                        },
+                        {
+                            "name": "srhino_plugins_layer",
+                            "rtds_layer": {
+                                "name": "srhino_plugins",
+                                "rtds_config": {
+                                    "ads": {},
+                                    "resource_api_version": "V3"
+                                }
+                            }
+                        },
+                        {
+                            "name": "grpc_async_client_layer",
+                            "static_layer": {
+                                "envoy": {
+                                    "reloadable_features": {
+                                        "enable_grpc_async_client_cache": true
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "last_updated": "2025-07-07T08:01:26.784Z"
+        },
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.ClustersConfigDump",
+            "version_info": "13",
+            "static_clusters": [
+                {
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "xds_cluster",
+                        "type": "STATIC",
+                        "connect_timeout": "1s",
+                        "load_assignment": {
+                            "cluster_name": "xds_cluster",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "127.0.0.1",
+                                                        "port_value": 9977
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "typed_extension_protocol_options": {
+                            "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                "explicit_http_config": {
+                                    "http2_protocol_options": {}
+                                }
+                            }
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:26.793Z"
+                }
+            ],
+            "dynamic_active_clusters": [
+                {
+                    "version_info": "450c91423681872be590630f8aa21dcf2069a93e096bba9a5d0bd98245c81bc6",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "01jz59bf67njs7btmdbg4bz0vs",
+                        "type": "STRICT_DNS",
+                        "lb_policy": "RANDOM",
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "common_lb_config": {
+                            "healthy_panic_threshold": {}
+                        },
+                        "load_assignment": {
+                            "cluster_name": "01jz59bf67njs7btmdbg4bz0vs",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "192.192.101.104",
+                                                        "port_value": 20011
+                                                    }
+                                                },
+                                                "hostname": "192.192.101.104:20011"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "track_cluster_stats": {
+                            "request_response_sizes": true
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.368Z"
+                },
+                {
+                    "version_info": "5e0a326a9eb9e6acfa4348286f2ad02a023bb7d41dba2e18e9a4e1728ee9b503",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "01jz7qtqady6hdx19ma1mapq8x",
+                        "type": "STRICT_DNS",
+                        "lb_policy": "RANDOM",
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "common_lb_config": {
+                            "healthy_panic_threshold": {}
+                        },
+                        "load_assignment": {
+                            "cluster_name": "01jz7qtqady6hdx19ma1mapq8x",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "www.ssssss.com",
+                                                        "port_value": 80
+                                                    }
+                                                },
+                                                "hostname": "www.ssssss.com:80"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "track_cluster_stats": {
+                            "request_response_sizes": true
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.365Z"
+                },
+                {
+                    "version_info": "49763524abf36566c54c033a8a23ce2084e313d5f9a49ed40ce168cfd6f7ec7e",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "01jz7t12ta9ehgcesdyy9570vr",
+                        "type": "STRICT_DNS",
+                        "lb_policy": "RANDOM",
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "common_lb_config": {
+                            "healthy_panic_threshold": {}
+                        },
+                        "load_assignment": {
+                            "cluster_name": "01jz7t12ta9ehgcesdyy9570vr",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "www.saasdasda.com",
+                                                        "port_value": 80
+                                                    }
+                                                },
+                                                "hostname": "www.saasdasda.com:80"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "track_cluster_stats": {
+                            "request_response_sizes": true
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.358Z"
+                },
+                {
+                    "version_info": "3f5b6590c958a6b0fe96f88bab52bb8aefdf4f174701b9a16b3cf94acc99bafb",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "01jz7t9nyae7p8vbkb4ty34b45",
+                        "type": "STRICT_DNS",
+                        "lb_policy": "RANDOM",
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "common_lb_config": {
+                            "healthy_panic_threshold": {}
+                        },
+                        "load_assignment": {
+                            "cluster_name": "01jz7t9nyae7p8vbkb4ty34b45",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "www.saasds2sasda.com",
+                                                        "port_value": 80
+                                                    }
+                                                },
+                                                "hostname": "www.saasds2sasda.com:80"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "track_cluster_stats": {
+                            "request_response_sizes": true
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.367Z"
+                },
+                {
+                    "version_info": "43a3f5eec5412703ae6037ad6df9aa1cc6690d964a79dfaaf6a4b00c3ebaa5cb",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "cluster.central-database",
+                        "type": "STRICT_DNS",
+                        "health_checks": [
+                            {
+                                "timeout": "5s",
+                                "interval": "5s",
+                                "unhealthy_threshold": 3,
+                                "healthy_threshold": 1,
+                                "tcp_health_check": {}
+                            }
+                        ],
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "load_assignment": {
+                            "cluster_name": "cluster.central-database",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "192.192.101.114",
+                                                        "port_value": 7878
+                                                    }
+                                                },
+                                                "hostname": "192.192.101.114:7878"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "typed_extension_protocol_options": {
+                            "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                "explicit_http_config": {
+                                    "http2_protocol_options": {}
+                                }
+                            }
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.364Z"
+                },
+                {
+                    "version_info": "350dfba8f6128863161b489f59f049d9497bdc64129ed7f30c954ba481495881",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "cluster.ratelimit-service",
+                        "type": "STRICT_DNS",
+                        "health_checks": [
+                            {
+                                "timeout": "5s",
+                                "interval": "5s",
+                                "unhealthy_threshold": 3,
+                                "healthy_threshold": 1,
+                                "tcp_health_check": {}
+                            }
+                        ],
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "load_assignment": {
+                            "cluster_name": "cluster.ratelimit-service",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "192.192.101.114",
+                                                        "port_value": 7878
+                                                    }
+                                                },
+                                                "hostname": "192.192.101.114:7878"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "typed_extension_protocol_options": {
+                            "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                "explicit_http_config": {
+                                    "http2_protocol_options": {}
+                                }
+                            }
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.367Z"
+                },
+                {
+                    "version_info": "2f7400f2ea3929b1d6348c96f69df5a4a584104a8317768876913394f647ccd6",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "global-plugin-http-upstream",
+                        "type": "STRICT_DNS",
+                        "health_checks": [
+                            {
+                                "timeout": "5s",
+                                "interval": "5s",
+                                "unhealthy_threshold": 3,
+                                "healthy_threshold": 1,
+                                "tcp_health_check": {}
+                            }
+                        ],
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "load_assignment": {
+                            "cluster_name": "global-plugin-http-upstream",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "192.192.101.114",
+                                                        "port_value": 7879
+                                                    }
+                                                },
+                                                "hostname": "192.192.101.114:7879"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "typed_extension_protocol_options": {
+                            "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                "explicit_http_config": {
+                                    "http2_protocol_options": {}
+                                }
+                            }
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.366Z"
+                },
+                {
+                    "version_info": "b6f9b34f0491644b5c9a532022c2c1bbc95d4e047fa0d81cd10e032ec5adda53",
+                    "cluster": {
+                        "@type": "type.googleapis.com/envoy.config.cluster.v3.Cluster",
+                        "name": "polycube-http-upstream",
+                        "type": "STRICT_DNS",
+                        "circuit_breakers": {
+                            "thresholds": [
+                                {
+                                    "max_connections": 4294967295,
+                                    "max_pending_requests": 4294967295,
+                                    "max_requests": 4294967295
+                                }
+                            ]
+                        },
+                        "dns_lookup_family": "V4_ONLY",
+                        "upstream_bind_config": {
+                            "source_address": {
+                                "address": "0.0.0.0",
+                                "port_value": 0
+                            },
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ]
+                        },
+                        "transport_socket": {
+                            "name": "envoy.transport_sockets.tls",
+                            "typed_config": {
+                                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.raw_buffer.v3.RawBuffer"
+                            }
+                        },
+                        "load_assignment": {
+                            "cluster_name": "polycube-http-upstream",
+                            "endpoints": [
+                                {
+                                    "lb_endpoints": [
+                                        {
+                                            "endpoint": {
+                                                "address": {
+                                                    "socket_address": {
+                                                        "address": "127.0.0.1",
+                                                        "port_value": 9000
+                                                    }
+                                                },
+                                                "hostname": "127.0.0.1:9000"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "typed_extension_protocol_options": {
+                            "envoy.extensions.upstreams.http.v3.HttpProtocolOptions": {
+                                "@type": "type.googleapis.com/envoy.extensions.upstreams.http.v3.HttpProtocolOptions",
+                                "explicit_http_config": {
+                                    "http_protocol_options": {}
+                                }
+                            }
+                        }
+                    },
+                    "last_updated": "2025-07-07T08:01:27.358Z"
+                }
+            ]
+        },
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.ListenersConfigDump",
+            "version_info": "4",
+            "dynamic_listeners": [
+                {
+                    "name": "default~01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011",
+                    "active_state": {
+                        "version_info": "62b2e4ebbbc26a4b29c588af3d962b39d178dffcc8af47de5407a4766e8ed5e3",
+                        "listener": {
+                            "@type": "type.googleapis.com/envoy.config.listener.v3.Listener",
+                            "name": "default~01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011",
+                            "address": {
+                                "socket_address": {
+                                    "address": "192.192.101.218",
+                                    "port_value": 10011,
+                                    "ipv4_compat": true
+                                }
+                            },
+                            "filter_chains": [
+                                {
+                                    "filters": [
+                                        {
+                                            "name": "envoy.filters.network.http_connection_manager",
+                                            "typed_config": {
+                                                "@type": "type.googleapis.com/envoy.extensions.filters.network.http_connection_manager.v3.HttpConnectionManager",
+                                                "stat_prefix": "01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011~3550641741",
+                                                "rds": {
+                                                    "config_source": {
+                                                        "ads": {},
+                                                        "resource_api_version": "V3"
+                                                    },
+                                                    "route_config_name": "01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011~3550641741"
+                                                },
+                                                "http_filters": [
+                                                    {
+                                                        "name": "envoy.filters.http.body-to-metadata.1.0",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.filters.http.body_to_metadata.v3.BodyToMetadataGlobal",
+                                                            "request_rule": {
+                                                                "max_body_bytes": 104857600
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.filters.http.cors",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.config.route.v3.CorsPolicy"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.filters.http.lua",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua",
+                                                            "inline_code": "function envoy_on_request(request_handle)\n  request_handle:headers():add(\"sr-vsmatched\",\"false\");\nend\n"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.extensions.common.matching.v3.ExtensionWithMatcher",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.common.matching.v3.ExtensionWithMatcher",
+                                                            "extension_config": {
+                                                                "name": "envoy.extensions.filters.http.composite.v3.Composite",
+                                                                "typed_config": {
+                                                                    "@type": "type.googleapis.com/envoy.extensions.filters.http.composite.v3.Composite"
+                                                                }
+                                                            },
+                                                            "xds_matcher": {
+                                                                "matcher_list": {
+                                                                    "matchers": [
+                                                                        {
+                                                                            "predicate": {
+                                                                                "and_matcher": {
+                                                                                    "predicate": [
+                                                                                        {
+                                                                                            "single_predicate": {
+                                                                                                "input": {
+                                                                                                    "name": "envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                    "typed_config": {
+                                                                                                        "@type": "type.googleapis.com/envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                        "header_name": "sr-vsmatched"
+                                                                                                    }
+                                                                                                },
+                                                                                                "value_match": {
+                                                                                                    "prefix": "false"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "single_predicate": {
+                                                                                                "input": {
+                                                                                                    "name": "envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                    "typed_config": {
+                                                                                                        "@type": "type.googleapis.com/envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                        "header_name": "host"
+                                                                                                    }
+                                                                                                },
+                                                                                                "value_match": {
+                                                                                                    "exact": "192.192.101.218:10011"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "on_match": {
+                                                                                "action": {
+                                                                                    "name": "envoy.extensions.filters.http.composite.v3.ExecuteFilterAction",
+                                                                                    "typed_config": {
+                                                                                        "@type": "type.googleapis.com/envoy.extensions.filters.http.composite.v3.ExecuteFilterAction",
+                                                                                        "typed_config": {
+                                                                                            "name": "www.srhino.com.user-identify.1.0.4.01jz57tm6anm23b9hws5endxc5",
+                                                                                            "typed_config": {
+                                                                                                "@type": "type.googleapis.com/envoy.extensions.filters.http.srhino_plugin_loader.v3.SrhinoPluginLoaderGlobal",
+                                                                                                "plugin_file_name": "www.srhino.com.user-identify.so.1.0.4",
+                                                                                                "config": {
+                                                                                                    "cfgs": [
+                                                                                                        {
+                                                                                                            "infos": [
+                                                                                                                {
+                                                                                                                    "app_id": 105,
+                                                                                                                    "path_prefix": "/",
+                                                                                                                    "app_address": "192.192.101.218:10011"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "rules": [
+                                                                                                                {
+                                                                                                                    "login_success": [
+                                                                                                                        {
+                                                                                                                            "position": 5,
+                                                                                                                            "param": [
+                                                                                                                                ":status",
+                                                                                                                                "200"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 6,
+                                                                                                                            "param": [
+                                                                                                                                ":status",
+                                                                                                                                "200"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 7,
+                                                                                                                            "param": [
+                                                                                                                                ":status",
+                                                                                                                                "200"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "visit_token": [
+                                                                                                                        {
+                                                                                                                            "position": 1,
+                                                                                                                            "param": [
+                                                                                                                                "visitor_id",
+                                                                                                                                "user_id",
+                                                                                                                                "guest_id",
+                                                                                                                                "tracking_id",
+                                                                                                                                "visitor_token",
+                                                                                                                                "tracking_token",
+                                                                                                                                "anon_id",
+                                                                                                                                "uuid",
+                                                                                                                                "vid",
+                                                                                                                                "gid",
+                                                                                                                                "cid",
+                                                                                                                                "fid",
+                                                                                                                                "_tb_token_",
+                                                                                                                                "unick",
+                                                                                                                                "pin",
+                                                                                                                                "Ecp_ClientId",
+                                                                                                                                "sessionid",
+                                                                                                                                "__snaker__id",
+                                                                                                                                "client_id",
+                                                                                                                                "user_cookie",
+                                                                                                                                "client_cookie",
+                                                                                                                                "admin-token-crm",
+                                                                                                                                "authorization"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 2,
+                                                                                                                            "param": [
+                                                                                                                                "visitor_id",
+                                                                                                                                "user_id",
+                                                                                                                                "guest_id",
+                                                                                                                                "tracking_id",
+                                                                                                                                "visitor_token",
+                                                                                                                                "tracking_token",
+                                                                                                                                "anon_id",
+                                                                                                                                "uuid",
+                                                                                                                                "vid",
+                                                                                                                                "gid",
+                                                                                                                                "cid",
+                                                                                                                                "fid",
+                                                                                                                                "_tb_token_",
+                                                                                                                                "unick",
+                                                                                                                                "pin",
+                                                                                                                                "Ecp_ClientId",
+                                                                                                                                "sessionid",
+                                                                                                                                "__snaker__id",
+                                                                                                                                "client_id",
+                                                                                                                                "user_cookie",
+                                                                                                                                "client_cookie",
+                                                                                                                                "admin-token-crm",
+                                                                                                                                "authorization"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 3,
+                                                                                                                            "param": [
+                                                                                                                                "visitor_id",
+                                                                                                                                "user_id",
+                                                                                                                                "guest_id",
+                                                                                                                                "tracking_id",
+                                                                                                                                "visitor_token",
+                                                                                                                                "tracking_token",
+                                                                                                                                "anon_id",
+                                                                                                                                "uuid",
+                                                                                                                                "vid",
+                                                                                                                                "gid",
+                                                                                                                                "cid",
+                                                                                                                                "fid",
+                                                                                                                                "_tb_token_",
+                                                                                                                                "unick",
+                                                                                                                                "pin",
+                                                                                                                                "Ecp_ClientId",
+                                                                                                                                "sessionid",
+                                                                                                                                "__snaker__id",
+                                                                                                                                "client_id",
+                                                                                                                                "user_cookie",
+                                                                                                                                "client_cookie",
+                                                                                                                                "admin-token-crm",
+                                                                                                                                "authorization"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 4,
+                                                                                                                            "param": [
+                                                                                                                                "visitor_id",
+                                                                                                                                "user_id",
+                                                                                                                                "guest_id",
+                                                                                                                                "tracking_id",
+                                                                                                                                "visitor_token",
+                                                                                                                                "tracking_token",
+                                                                                                                                "anon_id",
+                                                                                                                                "uuid",
+                                                                                                                                "vid",
+                                                                                                                                "gid",
+                                                                                                                                "cid",
+                                                                                                                                "fid",
+                                                                                                                                "_tb_token_",
+                                                                                                                                "unick",
+                                                                                                                                "pin",
+                                                                                                                                "Ecp_ClientId",
+                                                                                                                                "sessionid",
+                                                                                                                                "__snaker__id",
+                                                                                                                                "client_id",
+                                                                                                                                "user_cookie",
+                                                                                                                                "client_cookie",
+                                                                                                                                "admin-token-crm",
+                                                                                                                                "authorization"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "id": 17,
+                                                                                                                    "user_name": [
+                                                                                                                        {
+                                                                                                                            "position": 1,
+                                                                                                                            "param": [
+                                                                                                                                "user",
+                                                                                                                                "username",
+                                                                                                                                "name",
+                                                                                                                                "user_ID",
+                                                                                                                                "login_name",
+                                                                                                                                "account",
+                                                                                                                                "account_name",
+                                                                                                                                "email",
+                                                                                                                                "email_address",
+                                                                                                                                "telephone",
+                                                                                                                                "nickname"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 2,
+                                                                                                                            "param": [
+                                                                                                                                "user",
+                                                                                                                                "username",
+                                                                                                                                "name",
+                                                                                                                                "user_ID",
+                                                                                                                                "login_name",
+                                                                                                                                "account",
+                                                                                                                                "account_name",
+                                                                                                                                "email",
+                                                                                                                                "email_address",
+                                                                                                                                "telephone",
+                                                                                                                                "nickname"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "param": [
+                                                                                                                                "user",
+                                                                                                                                "username",
+                                                                                                                                "name",
+                                                                                                                                "user_ID",
+                                                                                                                                "login_name",
+                                                                                                                                "account",
+                                                                                                                                "account_name",
+                                                                                                                                "email",
+                                                                                                                                "email_address",
+                                                                                                                                "telephone",
+                                                                                                                                "nickname"
+                                                                                                                            ],
+                                                                                                                            "position": 3
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "param": [
+                                                                                                                                "user",
+                                                                                                                                "username",
+                                                                                                                                "name",
+                                                                                                                                "user_ID",
+                                                                                                                                "login_name",
+                                                                                                                                "account",
+                                                                                                                                "account_name",
+                                                                                                                                "email",
+                                                                                                                                "email_address",
+                                                                                                                                "telephone",
+                                                                                                                                "nickname"
+                                                                                                                            ],
+                                                                                                                            "position": 4
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "login_token": [
+                                                                                                                        {
+                                                                                                                            "position": 5,
+                                                                                                                            "param": [
+                                                                                                                                "known_sign_in",
+                                                                                                                                "token",
+                                                                                                                                "session-id",
+                                                                                                                                "cookie",
+                                                                                                                                "session",
+                                                                                                                                "login",
+                                                                                                                                "signin",
+                                                                                                                                "session_key"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "position": 6,
+                                                                                                                            "param": [
+                                                                                                                                "known_sign_in",
+                                                                                                                                "token",
+                                                                                                                                "session-id",
+                                                                                                                                "cookie",
+                                                                                                                                "session",
+                                                                                                                                "login",
+                                                                                                                                "signin",
+                                                                                                                                "session_key"
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "param": [
+                                                                                                                                "known_sign_in",
+                                                                                                                                "token",
+                                                                                                                                "session-id",
+                                                                                                                                "cookie",
+                                                                                                                                "session",
+                                                                                                                                "login",
+                                                                                                                                "signin",
+                                                                                                                                "session_key"
+                                                                                                                            ],
+                                                                                                                            "position": 7
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "login_url": [
+                                                                                                                        "/login",
+                                                                                                                        "/signin",
+                                                                                                                        "/oauth/callback",
+                                                                                                                        "/session/new",
+                                                                                                                        "/authenticate",
+                                                                                                                        "/sign-in",
+                                                                                                                        "/register",
+                                                                                                                        "/sign_in"
+                                                                                                                    ],
+                                                                                                                    "enabled": true
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.extensions.common.matching.v3.ExtensionWithMatcher",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.common.matching.v3.ExtensionWithMatcher",
+                                                            "extension_config": {
+                                                                "name": "envoy.extensions.filters.http.composite.v3.Composite",
+                                                                "typed_config": {
+                                                                    "@type": "type.googleapis.com/envoy.extensions.filters.http.composite.v3.Composite"
+                                                                }
+                                                            },
+                                                            "xds_matcher": {
+                                                                "matcher_list": {
+                                                                    "matchers": [
+                                                                        {
+                                                                            "predicate": {
+                                                                                "and_matcher": {
+                                                                                    "predicate": [
+                                                                                        {
+                                                                                            "single_predicate": {
+                                                                                                "input": {
+                                                                                                    "name": "envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                    "typed_config": {
+                                                                                                        "@type": "type.googleapis.com/envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                        "header_name": "sr-vsmatched"
+                                                                                                    }
+                                                                                                },
+                                                                                                "value_match": {
+                                                                                                    "prefix": "false"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "single_predicate": {
+                                                                                                "input": {
+                                                                                                    "name": "envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                    "typed_config": {
+                                                                                                        "@type": "type.googleapis.com/envoy.type.matcher.v3.HttpRequestHeaderMatchInput",
+                                                                                                        "header_name": "host"
+                                                                                                    }
+                                                                                                },
+                                                                                                "value_match": {
+                                                                                                    "exact": "192.192.101.218:10011"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "on_match": {
+                                                                                "action": {
+                                                                                    "name": "envoy.extensions.filters.http.composite.v3.ExecuteFilterAction",
+                                                                                    "typed_config": {
+                                                                                        "@type": "type.googleapis.com/envoy.extensions.filters.http.composite.v3.ExecuteFilterAction",
+                                                                                        "typed_config": {
+                                                                                            "name": "envoy.filters.http.lua",
+                                                                                            "typed_config": {
+                                                                                                "@type": "type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua",
+                                                                                                "inline_code": "function envoy_on_request(request_handle)\n  request_handle:headers():replace(\"sr-vsmatched\",\"true\");\nend\n"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.filters.http.lua",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua",
+                                                            "inline_code": "function envoy_on_request(request_handle)\n  request_handle:headers():remove(\"sr-vsmatched\");\nend\n"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.filters.http.body-to-metadata.1.0",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.filters.http.body_to_metadata.v3.BodyToMetadataGlobal",
+                                                            "response_rule": {
+                                                                "max_body_bytes": 104857600
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.filters.http.router",
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.filters.http.router.v3.Router",
+                                                            "suppress_envoy_headers": true
+                                                        }
+                                                    }
+                                                ],
+                                                "http_protocol_options": {
+                                                    "accept_http_10": true
+                                                },
+                                                "server_name": "stone rhino",
+                                                "access_log": [
+                                                    {
+                                                        "name": "envoy.access_loggers.file",
+                                                        "filter": {
+                                                            "header_filter": {
+                                                                "header": {
+                                                                    "name": "User-Agent",
+                                                                    "exact_match": "nuclei",
+                                                                    "invert_match": true
+                                                                }
+                                                            }
+                                                        },
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.access_loggers.file.v3.FileAccessLog",
+                                                            "path": "/data/envoy/access_log/access.log",
+                                                            "log_format": {
+                                                                "json_format": {
+                                                                    "l": [
+                                                                        [
+                                                                            "%START_TIME(%s.%9f)%",
+                                                                            "%PROTOCOL%",
+                                                                            "%REQ(:SCHEME)%",
+                                                                            "%REQ(:METHOD)%",
+                                                                            "%REQ(HOST)%",
+                                                                            "%REQ(:AUTHORITY)%",
+                                                                            "%REQ(:PATH)%",
+                                                                            "%REQ(USER-AGENT)%",
+                                                                            "%REQ(X-ENVOY-ORIGINAL-PATH)%",
+                                                                            "%REQ(REFERER)%",
+                                                                            "%REQ(X-FORWARDED-FOR)%",
+                                                                            "%REQ(X-FORWARDED-HOST)%",
+                                                                            "%REQ(CONTENT-TYPE)%",
+                                                                            "%REQ(ACCEPT)%",
+                                                                            "%REQUEST_HEADERS_BYTES%",
+                                                                            "%BYTES_RECEIVED%",
+                                                                            "%REQ(x-request-id)%"
+                                                                        ],
+                                                                        [
+                                                                            "%RESPONSE_CODE%",
+                                                                            "%RESPONSE_CODE_DETAILS%",
+                                                                            "%RESP(CONTENT-TYPE)%",
+                                                                            "%RESPONSE_HEADERS_BYTES%",
+                                                                            "%BYTES_SENT%",
+                                                                            "%RESPONSE_TRAILERS_BYTES%"
+                                                                        ],
+                                                                        [
+                                                                            "%DOWNSTREAM_REMOTE_ADDRESS%",
+                                                                            "%DOWNSTREAM_LOCAL_ADDRESS%",
+                                                                            "%DOWNSTREAM_DIRECT_REMOTE_ADDRESS%",
+                                                                            "%UPSTREAM_HOST%",
+                                                                            "%UPSTREAM_LOCAL_ADDRESS%",
+                                                                            "%DURATION%",
+                                                                            "%VIRTUAL_CLUSTER_NAME%",
+                                                                            "%ROUTE_NAME%",
+                                                                            "%UPSTREAM_CLUSTER%",
+                                                                            "%DYNAMIC_METADATA(envoy.access_loggers.grpc.filter_access_log)%",
+                                                                            "%REQUEST_DURATION%",
+                                                                            "%REQUEST_TX_DURATION%",
+                                                                            "%RESPONSE_DURATION%",
+                                                                            "%RESPONSE_TX_DURATION%"
+                                                                        ]
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "envoy.access_loggers.file",
+                                                        "filter": {
+                                                            "header_filter": {
+                                                                "header": {
+                                                                    "name": "User-Agent",
+                                                                    "exact_match": "nuclei",
+                                                                    "invert_match": true
+                                                                }
+                                                            }
+                                                        },
+                                                        "typed_config": {
+                                                            "@type": "type.googleapis.com/envoy.extensions.access_loggers.file.v3.FileAccessLog",
+                                                            "path": "/data/envoy/body_log/body.log",
+                                                            "log_format": {
+                                                                "json_format": {
+                                                                    "node_id": "%NODE_ID%",
+                                                                    "user_info": {
+                                                                        "name": "%USER_NAME%",
+                                                                        "app_id": "%APP_ID%",
+                                                                        "rule_id": "%RULE_ID%",
+                                                                        "unique_id": "%UNIQUE_ID%"
+                                                                    },
+                                                                    "srhino_proto_format": "true",
+                                                                    "request_id": "%REQ(X-REQUEST-ID)%",
+                                                                    "connection_info": {
+                                                                        "upstream_host": "%UPSTREAM_HOST%",
+                                                                        "virtual_cluster_name": "%VIRTUAL_CLUSTER_NAME%",
+                                                                        "request_tx_duration": "%REQUEST_TX_DURATION%",
+                                                                        "response_duration": "%RESPONSE_DURATION%",
+                                                                        "response_tx_duration": "%RESPONSE_TX_DURATION%",
+                                                                        "bytes_sent": "%BYTES_SENT%",
+                                                                        "downstream_remote_address": "%DOWNSTREAM_REMOTE_ADDRESS%",
+                                                                        "route_name": "%ROUTE_NAME%",
+                                                                        "start_time": "%INT64_START_TIME%",
+                                                                        "origin_host": "%ORIGIN_HOST%",
+                                                                        "downstream_direct_remote_address": "%DOWNSTREAM_DIRECT_REMOTE_ADDRESS%",
+                                                                        "upstream_local_address": "%UPSTREAM_LOCAL_ADDRESS%",
+                                                                        "upstream_cluster": "%UPSTREAM_CLUSTER%",
+                                                                        "listener_stat_prefix": "%LISTENER_STAT_PREFIX%",
+                                                                        "duration": "%DURATION%",
+                                                                        "request_duration": "%REQUEST_DURATION%",
+                                                                        "downstream_local_address": "%DOWNSTREAM_LOCAL_ADDRESS%",
+                                                                        "dynamic_metadata_filter": "%DYNAMIC_METADATA(envoy.access_loggers.grpc.filter_access_log)%",
+                                                                        "bytes_received": "%BYTES_RECEIVED%"
+                                                                    },
+                                                                    "request": {
+                                                                        "raw_start_line": "%REQ_LINE%",
+                                                                        "raw_headers": "%ALL_REQ_HEADER%",
+                                                                        "raw_body": [
+                                                                            "%REQUEST_BODY%"
+                                                                        ]
+                                                                    },
+                                                                    "response": {
+                                                                        "raw_headers": "%ALL_RESP_HEADER%",
+                                                                        "raw_body": [
+                                                                            "%RESPONSE_BODY%"
+                                                                        ],
+                                                                        "raw_start_line": "%RESP_LINE%"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ],
+                                                "use_remote_address": true,
+                                                "skip_xff_append": true,
+                                                "upgrade_configs": [
+                                                    {
+                                                        "upgrade_type": "websocket",
+                                                        "filters": [
+                                                            {
+                                                                "name": "envoy.filters.http.router"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "merge_slashes": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "per_connection_buffer_limit_bytes": 104857600,
+                            "freebind": true,
+                            "socket_options": [
+                                {
+                                    "description": "set SOL_SOCKET/SO_MARK to 8577",
+                                    "level": "1",
+                                    "name": "36",
+                                    "int_value": "8577"
+                                }
+                            ],
+                            "bind_to_port": true
+                        },
+                        "last_updated": "2025-07-07T08:03:19.926Z"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.ScopedRoutesConfigDump"
+        },
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.RoutesConfigDump",
+            "dynamic_route_configs": [
+                {
+                    "version_info": "239d98ad1adbffebf84147612bf06532ff6391472b780e4a7d632c8ffc088950",
+                    "route_config": {
+                        "@type": "type.googleapis.com/envoy.config.route.v3.RouteConfiguration",
+                        "name": "01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011~3550641741",
+                        "virtual_hosts": [
+                            {
+                                "name": "01jz59bf67njs7btmdbg4bz0vs",
+                                "domains": [
+                                    "192.192.101.218:10011"
+                                ],
+                                "routes": [
+                                    {
+                                        "match": {
+                                            "prefix": "/",
+                                            "case_sensitive": true
+                                        },
+                                        "route": {
+                                            "cluster": "01jz59bf67njs7btmdbg4bz0vs",
+                                            "timeout": "0s",
+                                            "hash_policy": [
+                                                {
+                                                    "connection_properties": {
+                                                        "source_ip": true
+                                                    }
+                                                }
+                                            ],
+                                            "append_x_forwarded_host": true
+                                        },
+                                        "metadata": {
+                                            "filter_metadata": {
+                                                "route_id": {
+                                                    "route_id": 0
+                                                }
+                                            }
+                                        },
+                                        "name": "[01jz59eehbchb3b2r1tyqbqwkt~192.192.101.218:10011~3550641741].[01jz59bf67njs7btmdbg4bz0vs].[01jz6z7kf56t76v1ahdcphvs5t]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "last_updated": "2025-07-07T08:01:29.046Z"
+                }
+            ]
+        },
+        {
+            "@type": "type.googleapis.com/envoy.admin.v3.SecretsConfigDump"
+        }
+    ]
+}
